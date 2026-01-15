@@ -1,0 +1,21 @@
+# Cursor Rules
+
+## Code Style and Comments
+
+- **Avoid obvious/redundant comments**: Do not add comments that simply restate what the code does. Comments should explain "why" not "what".
+  - ❌ Bad: `# Print loss at every step for all ranks (similar to FlagScale format)`
+  - ❌ Bad: `# Get the next batch from dataloader`
+  - ❌ Bad: `# Calculate the loss value`
+  - ✅ Good: `# Use FlagScale format for compatibility with existing tooling`
+  - ✅ Good: `# Retry mechanism needed due to occasional corrupted parquet files`
+  - ✅ Good: `# Normalize by dataset length to balance sampling across mixtures`
+
+- Only add comments when they provide additional context, explain non-obvious behavior, or document important design decisions.
+
+## Linter and Code Changes
+
+- **Do not fix linter errors in unedited code**: Only fix linter errors in code that you are actively editing or that is directly related to your changes. Do not modify unrelated code sections just because they have linter warnings or errors.
+  - ✅ Good: Fix linter errors in the function you're modifying
+  - ❌ Bad: Fixing linter errors in unrelated functions or files that weren't part of the current task
+  - ❌ Bad: Refactoring code that wasn't requested just to satisfy linter warnings
+
