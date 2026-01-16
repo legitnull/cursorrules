@@ -19,3 +19,20 @@
   - ❌ Bad: Fixing linter errors in unrelated functions or files that weren't part of the current task
   - ❌ Bad: Refactoring code that wasn't requested just to satisfy linter warnings
 
+## Reference Repositories
+
+- **When working in PoorNull, always reference these repositories** for coding patterns, design decisions, and best practices:
+  - StockSharp (`/Users/yupufeng/github/StockSharp`)
+  - FinRL (`/Users/yupufeng/github/FinRL`)
+  - abu (`/Users/yupufeng/github/abu`)
+  - zipline (`/Users/yupufeng/github/zipline`)
+  - qlib (`/Users/yupufeng/github/qlib`)
+  - TradingAgents (`/Users/yupufeng/github/TradingAgents`)
+  - Lean (`/Users/yupufeng/github/Lean`)
+
+  These repositories are located in the same parent directory as PoorNull and should be consulted when:
+  - Making architectural decisions
+  - Implementing similar features
+  - Choosing coding patterns or conventions
+  - Designing APIs or interfaces
+  - Understanding best practices in quantitative trading systems
