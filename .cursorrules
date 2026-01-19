@@ -36,3 +36,11 @@
   - Choosing coding patterns or conventions
   - Designing APIs or interfaces
   - Understanding best practices in quantitative trading systems
+
+## Backward Compatibility
+
+- **Do not consider backward compatibility unless explicitly asked**: When making changes, do not worry about maintaining backward compatibility with older versions, deprecated APIs, or legacy code paths unless the user explicitly requests it.
+  - ✅ Good: Make breaking changes if they improve the codebase, unless explicitly asked to maintain compatibility
+  - ❌ Bad: Adding compatibility layers or maintaining deprecated code paths "just in case"
+  - ❌ Bad: Preserving old behavior when a cleaner implementation is possible
+
